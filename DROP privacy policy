@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DROP — Privacy Policy</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0b0b12;
+    --surface: #12121e;
+    --border: #1e1e30;
+    --cyan: #5bc8fa;
+    --purple: #b57bee;
+    --gold: #ffd166;
+    --text: #c8cee8;
+    --muted: #5a5f7a;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 300;
+    line-height: 1.8;
+    min-height: 100vh;
+  }
+
+  /* Stars background */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image:
+      radial-gradient(1px 1px at 15% 20%, rgba(255,255,255,0.4) 0%, transparent 100%),
+      radial-gradient(1px 1px at 45% 8%, rgba(255,255,255,0.3) 0%, transparent 100%),
+      radial-gradient(1px 1px at 72% 35%, rgba(255,255,255,0.5) 0%, transparent 100%),
+      radial-gradient(1px 1px at 88% 15%, rgba(255,255,255,0.2) 0%, transparent 100%),
+      radial-gradient(1px 1px at 30% 55%, rgba(255,255,255,0.3) 0%, transparent 100%),
+      radial-gradient(1px 1px at 60% 70%, rgba(255,255,255,0.4) 0%, transparent 100%),
+      radial-gradient(1px 1px at 10% 80%, rgba(255,255,255,0.2) 0%, transparent 100%),
+      radial-gradient(1px 1px at 90% 85%, rgba(255,255,255,0.3) 0%, transparent 100%),
+      radial-gradient(1px 1px at 55% 92%, rgba(255,255,255,0.2) 0%, transparent 100%),
+      radial-gradient(1px 1px at 25% 95%, rgba(255,255,255,0.4) 0%, transparent 100%);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .wrapper {
+    position: relative;
+    z-index: 1;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 60px 24px 80px;
+  }
+
+  /* Header */
+  header {
+    text-align: center;
+    margin-bottom: 56px;
+  }
+
+  .gem {
+    display: inline-block;
+    width: 56px;
+    height: 56px;
+    margin-bottom: 20px;
+    animation: float 3s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+  }
+
+  .gem svg { width: 100%; height: 100%; }
+
+  h1 {
+    font-family: 'Space Mono', monospace;
+    font-size: clamp(2rem, 6vw, 3rem);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    background: linear-gradient(135deg, var(--cyan), var(--purple));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 8px;
+  }
+
+  .subtitle {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.7rem;
+    color: var(--muted);
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+  }
+
+  /* Divider */
+  .divider {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--border), var(--cyan), var(--border), transparent);
+    margin: 48px 0;
+    opacity: 0.6;
+  }
+
+  /* Sections */
+  .section {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 28px 32px;
+    margin-bottom: 16px;
+    transition: border-color 0.3s;
+  }
+
+  .section:hover {
+    border-color: rgba(91, 200, 250, 0.25);
+  }
+
+  .section-label {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.65rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--cyan);
+    margin-bottom: 10px;
+    opacity: 0.8;
+  }
+
+  h2 {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: #e8ecff;
+    margin-bottom: 12px;
+  }
+
+  p {
+    font-size: 0.9rem;
+    color: var(--text);
+    line-height: 1.8;
+  }
+
+  a {
+    color: var(--cyan);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(91, 200, 250, 0.3);
+    transition: border-color 0.2s;
+  }
+
+  a:hover { border-color: var(--cyan); }
+
+  /* Tag badge */
+  .badge {
+    display: inline-block;
+    background: rgba(91, 200, 250, 0.1);
+    border: 1px solid rgba(91, 200, 250, 0.2);
+    color: var(--cyan);
+    font-family: 'Space Mono', monospace;
+    font-size: 0.65rem;
+    padding: 3px 10px;
+    border-radius: 20px;
+    margin-right: 6px;
+    margin-bottom: 8px;
+  }
+
+  .badge.purple {
+    background: rgba(181, 123, 238, 0.1);
+    border-color: rgba(181, 123, 238, 0.2);
+    color: var(--purple);
+  }
+
+  .badge.gold {
+    background: rgba(255, 209, 102, 0.1);
+    border-color: rgba(255, 209, 102, 0.2);
+    color: var(--gold);
+  }
+
+  .tags { margin-bottom: 12px; }
+
+  /* Footer */
+  footer {
+    text-align: center;
+    margin-top: 56px;
+    padding-top: 32px;
+    border-top: 1px solid var(--border);
+  }
+
+  footer p {
+    font-size: 0.8rem;
+    color: var(--muted);
+  }
+
+  .footer-logo {
+    font-family: 'Space Mono', monospace;
+    font-size: 1.1rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, var(--cyan), var(--purple));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 8px;
+  }
+</style>
+</head>
+<body>
+<div class="wrapper">
+
+  <header>
+    <div class="gem">
+      <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#5bc8fa" stop-opacity="0.4"/>
+            <stop offset="100%" stop-color="#5bc8fa" stop-opacity="0"/>
+          </radialGradient>
+        </defs>
+        <circle cx="50" cy="50" r="48" fill="url(#glow)"/>
+        <polygon points="50,5 61,28 87,28 66,45 74,71 50,55 26,71 34,45 13,28 39,28" fill="#7890f0" stroke="#b57bee" stroke-width="1.5"/>
+        <polygon points="50,5 61,28 50,35" fill="#c0d8ff" opacity="0.9"/>
+        <circle cx="50" cy="50" r="6" fill="white" opacity="0.95"/>
+        <circle cx="38" cy="28" r="4" fill="white" opacity="0.7"/>
+      </svg>
+    </div>
+    <h1>DROP</h1>
+    <p class="subtitle">Privacy Policy</p>
+  </header>
+
+  <div class="section">
+    <div class="section-label">Overview</div>
+    <h2>Your Privacy Matters</h2>
+    <p>DROP is a gem-dropping puzzle game. This policy explains how the game handles information. We keep it simple: DROP itself does not collect, store, or share any personal data from players.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-label">Advertising</div>
+    <h2>Google AdMob</h2>
+    <div class="tags">
+      <span class="badge">Device ID</span>
+      <span class="badge purple">IP Address</span>
+      <span class="badge gold">Ad Targeting</span>
+    </div>
+    <p>DROP displays ads powered by Google AdMob. AdMob may automatically collect certain data to serve relevant advertisements, including device identifiers, IP address, and general usage information. This data is collected and processed by Google, not by us. You can review Google's privacy practices at <a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a>.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-label">Third-Party Services</div>
+    <h2>What We Use</h2>
+    <p>The game integrates Google AdMob (<a href="https://admob.google.com" target="_blank">admob.google.com</a>) for advertising. All data practices related to AdMob are governed by Google's Privacy Policy. We do not use any other third-party analytics, tracking, or data collection services.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-label">Children</div>
+    <h2>Children's Privacy</h2>
+    <p>DROP is not directed at children under the age of 13. We do not knowingly collect personal information from children. The game is intended for players aged 13 and above.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-label">Updates</div>
+    <h2>Changes to This Policy</h2>
+    <p>We may update this Privacy Policy from time to time. Any changes will be reflected on this page with an updated date. Continued use of the game after changes constitutes acceptance of the updated policy.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-label">Contact</div>
+    <h2>Get in Touch</h2>
+    <p>If you have questions or concerns about this Privacy Policy, please contact us at <a href="mailto:support@drop-game.com">support@drop-game.com</a>.</p>
+  </div>
+
+  <div class="divider"></div>
+
+  <footer>
+    <div class="footer-logo">DROP</div>
+    <p>Last updated: May 24, 2026</p>
+    <p style="margin-top:6px">© 2026 DROP Game. All rights reserved.</p>
+  </footer>
+
+</div>
+</body>
+</html>
